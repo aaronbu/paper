@@ -13,7 +13,6 @@ stylesheets:
 stylesheets_preload:
 - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
 - https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap # for font
-- https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css # for toc basic style
 
 # scripts loaded in the end of the body
 scripts_defer:
@@ -45,12 +44,20 @@ main_color: sun # forest | grass | sky | sun | sea
 # google Analytics
 google_analytics_id: UA-76799046-1
 
-# commend module
+# comment module
 comment:
   enable: false
+  type: valine # valine | utterances
+
+  # valine 需要的参数
   appId: your-app-id
   appKey: your-app-key
   placeholder: say something
   notify: false
   verify: false
   avatar: mp
+
+  # utterances (https://utteranc.es/) 需要的参数
+  repo: your-repo-name
+  issue_term: your-issue-term
+  theme: your-comment-theme

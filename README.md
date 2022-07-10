@@ -4,11 +4,15 @@
 
 ![landing](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
 
+<p align='center'>
+简体中文 ｜ <a href="https://github.com/random-yang/paper/blob/master/README.en.md">English</a>
+</p>
+
 ## 目录
 
 - [如何使用](#如何使用)
-  - [安装](#安装)
-  - [配置项](#配置项)
+    - [安装](#安装)
+    - [配置项](#配置项)
 - [效果预览](#效果预览)
 - [update](#update)
 - [移植版](#移植版)
@@ -122,7 +126,7 @@ google_analytics_id: xx-xxxxxxx-xx
 
 - 文章置顶
 
-在文章 markdown 头部写：
+首先，在项目中安装 [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) 依赖，然后在文章 markdown 头部写：
 
 ```bash
 top: true
@@ -140,15 +144,52 @@ social:
 - 评论模块配置
 
 ```bash
-# commend module
+# comment module
 comment:
-  enable: false # true to enable
+  enable: false
+  type: valine # valine | utterances
+
+  # valine 需要的参数
   appId: your-app-id
   appKey: your-app-key
   placeholder: say something
   notify: false
   verify: false
   avatar: mp
+
+  # utterances (https://utteranc.es/) 需要的参数
+  repo: your-repo-name
+  issue_term: your-issue-term
+  theme: your-comment-theme
+```
+
+- 开启数学公式
+
+1. 卸载 hexo-math
+```bash
+npm uninstall hexo-math
+```
+2. 卸载 hexo-renderer-marked
+```bash
+npm uninstall hexo-renderer-marked
+```
+3. 安装 hexo-renderer-kramed
+```bash
+npm install hexo-renderer-kramed --save
+```
+4. 更新 _config.yml
+```bash
+# 添加
+math:
+  engine: 'mathjax'
+  mathjax:
+    enable: true
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
+```
+5. 最后
+```
+hexo clean
+hexo server
 ```
 
 ## 效果预览
@@ -185,9 +226,9 @@ git pull
 - [x] home 页面的 posts 图片(参数可配置)
 - [x] 文章置顶(最近才意识到置顶功能是十分重要的)
 - [x] RSS 订阅功能
-- [x] 根据情况看决定否添加评论系统(评论系统适合于使用者自行决定使用第三方评论插件)
-- [ ] 导航栏模块
+- [x] Latex
 - [ ] 图片 zooming
+- [x] 根据情况看决定否添加评论系统(评论系统适合于使用者自行决定使用第三方评论插件)
 - [ ] 全局搜索
 - [ ] 优化排版和细分字体
 
