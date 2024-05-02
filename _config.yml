@@ -24,6 +24,9 @@ social:
   # Github: https://github.com/yours
   # Codepen: https://codepen.io/yours
   # Dribbble: https://dribbble.com/yours
+  Bio: https://toosadtowrite.com
+  Project IF: https://if.toosadtowrite.com
+  Podcast: https://translate-slow.com
   Twitter: https://twitter.com/caeiro712
   # 知乎: https://www.zhihu.com/yours
   # 掘金: https://juejin.im/user/yours
@@ -42,7 +45,7 @@ social:
 main_color: sun # forest | grass | sky | sun | sea
 
 # google Analytics
-google_analytics_id: UA-76799046-1
+google_analytics_id: G-SDQWZBXCKN
 
 # comment module
 comment:
