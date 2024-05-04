@@ -12,7 +12,7 @@ stylesheets:
 
 stylesheets_preload:
 - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
-- https://fonts.googleapis.com/css2?family=Gloock&display=swap # for font
+- https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap # for font
 
 # scripts loaded in the end of the body
 scripts_defer:
