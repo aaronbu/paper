@@ -27,8 +27,8 @@ social:
   Bio: https://toosadtowrite.com
   Project IF: https://if.toosadtowrite.com
   Podcast: https://translate-slow.com
-  X: https://twitter.com/caeiro712
-  Instagram: https://instagram.com/
+  # X: https://twitter.com/caeiro712
+  Photography: https://iam.toosadtowrite.com/
   # 知乎: https://www.zhihu.com/yours
   # 掘金: https://juejin.im/user/yours
   Mail: mailto:work@toosadtowrite.com
@@ -43,7 +43,7 @@ categories: false
 tags: true
 
 # theme color
-main_color: sun # forest | grass | sky | sun | sea
+main_color: default # forest | grass | sky | sun | sea
 
 # google Analytics
 google_analytics_id: G-SDQWZBXCKN
